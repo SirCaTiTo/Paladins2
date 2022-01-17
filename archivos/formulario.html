@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilosFO.css">
+
+</head>
+<body>
+
+<div class="navegacion">
+    <div class="logo">
+        <div class="icon"> <ion-icon name="star-half-outline"></ion-icon>
+        </div>
+        <div class="name">SirCaTiTo</div>
+    </div>
+    <ul>
+        <li><a href="https://sircatito.github.io/Paladins2">Inicio</a></li>
+        <li><a href="Links.html">Links</a></li>
+    </ul>
+</div>
+<div class="formulario">
+    <div>
+        <h1>
+            Realiza el proceso de Registro
+        </h1>
+        <form action="">
+            <table>
+                <tr>
+                <td><label for="nombre_User">Nombre de Usuario</label></td>
+                <td><input type="text" name="Usuario" id="nombre_User"></td>
+                </tr>
+                <tr>
+                    <td><label for="Email">Correo Electrónico</label></td>
+                    <td><input type="email" name="correo" id="Email"> </td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Contraseña</label></td>
+                    <td><input type="password" name="Clave" id="pass"></td>
+                </tr>
+                <tr>
+                    <td><label for="genero">Genero</label></td>
+                    <td>
+                        <input type="radio" name="genero" value="femenino">Femenino
+                        <input type="radio" name="genero" value="masculino">Masculino
+                        <input type="radio" name="genero" value="otro">Otros
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Equipos">¿Cuales son tus Campeones favoritos?</label></td>
+                    <td>
+                        <select name="Campeones">
+                        <option value="Tyra">Tyra</option>
+                        <option value="Androxus">Androxus</option>
+                        <option value="Mal Damba">Mal' Damba</option>
+                        <option value="Fernando">Fernando</option>
+                        <option value="Rei">Rei</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Comentario">Comentario</label></td>
+                    <td><textarea name="Comentario" rows="4" col="40" value="Comentario">Deje su Comentario aquí</textarea>  </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Registrar"></td>
+                    <td><input type="reset" value="Borrar"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>

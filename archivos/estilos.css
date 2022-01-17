@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 5;
+    box-sizing: border-box;
+    font-family: "Crimson Pro" , Literata   ; 
+}
+
+:root{
+    --white: rgb(218, 13, 81) ;   
+    --white2: rgb(34, 13, 223);
+    --black: rgb(34, 13, 223);
+    --principal: hsl(128, 58%, 43%);
+    --second: #04ec8c;
+    --black2: #000;
+}
+
+body{
+    background-color: var(--white);
+    min-width: 100%;
+}
+
+.navegacion{
+    color: rgb(224, 21, 21);
+    position:absolute;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    height: 60px;
+    background-color: var(--second);
+    padding: 0 20px;
+}
+
+.navegacion .logo{
+    position: relative;
+    display: flex;
+    line-height: 60px;
+    color: var(--white2);
+    pointer-events: none;
+}
+
+.navegacion .logo .icon{
+    height: 100%;
+    position: relative;
+    top: 10px;
+}
+
+.navegacion .logo .icon ioon-icon{
+    font-size: 20em;
+    line-height: 70px;
+}
+
+.navegacion.logo .name{
+    font-size: 1.75em;
+    font-weight: 600;
+}
+
+.navegacion ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+.navegacion ul li{   
+    position: relative;
+    display: flex;
+    list-style: none;
+    margin-left: 15px;
+    font-size: 1.10em;
+    height: 100%;
+    align-items: center;
+    padding: 0 5px;
+    transition: .4s;
+}
+
+.navegacion ul li a{
+    text-decoration: none;
+    color: var(--black2);
+    font-weight: 500;
+}
+
+.jumboBx{
+    position: inherit;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100%;
+    width: 100%;
+    column-gap: 6px;
+}
+
+.jumboBx .heroImg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(206, 151, 151);
+    opacity: .8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .7);
+}
+
+.jumboBx .heroImg .imgBx{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.jumboBx .heroImg .imgBx img{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+}
+.jumboBx .heroImg .imgBx img:nth-child(1){
+    top: 18%;
+    left: 63%;
+    transform: scaleX(-1);
+}
+.jumboBx .heroImg .imgBx img:nth-child(2){
+    top:12%;
+    left:21%;
+    transform: scale(0.9);
+}
+
+.jumboBx .heroImg .imgBx img:nth-child(3){
+    top:28%;
+    left: 5;
+    transform: scale(0.6);
+}
+
+main{
+    position: relative;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+    top: 60px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+}
+
+.titulo h1{
+    font-size: 3.2em;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+    margin-bottom: .4em;
+    text-align: center;
+}
+
+.titulo h1::first-letter{
+    font-size: 3.5em;
+    color: rgb(37, 221, 13);
+}
+
+.titulo h2{
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    color: var(--black);
+    font-weight: 400;
+    text-align: left;
+}
+
+.titulo h2 span{
+    background-color: var(--principal);
+    color: var(--black2);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.titulo h2 span a{
+    text-decoration: none;
+    color:inherit;
+    cursor: pointer;
+}
+
+.titulo h3{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.titulo h3 span{
+    background-color: var(--principal);
+    text-decoration: none;
+    color:inherit;
+    cursor: pointer;
+}
