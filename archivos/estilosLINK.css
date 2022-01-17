@@ -142,6 +142,11 @@ main{
     left: 1px;
     transform: scaleX(-1);
 }
+.jumboBx .heroImg .imgBx img:nth-child(5){
+    top: 15%;
+    left: 1px;
+    transform: scaleX(-1);
+}
 .Links{
     display: flex;
     justify-content: center;
