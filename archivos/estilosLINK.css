@@ -143,9 +143,19 @@ main{
     transform: scaleX(-1);
 }
 .jumboBx .heroImg .imgBx img:nth-child(5){
-    top: 15%;
-    left: 1px;
-    transform: scaleX(-1);
+    top: 30%;
+    left: 123%;
+    transform: scale(0.3);
+}
+.jumboBx .heroImg .imgBx img:nth-child(6){
+    top: 50%;
+    left: 123%;
+    transform: scale(0.3);
+}
+.jumboBx .heroImg .imgBx img:nth-child(7){
+    top: 40%;
+    left: 150%;
+    transform: scale(0.50);
 }
 .Links{
     display: flex;
